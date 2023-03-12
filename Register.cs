@@ -30,7 +30,7 @@ namespace The_Food_Taxi
             else if(passwordtextBox.Text==confirmtextBox.Text)
             {
                 con.Open();
-                string register = "INSERT INTO tbl_users VALUES('" + usernametextBox.Text + "' , '" + passwordtextBox.Text + "')";
+                string register = "INSERT INTO tbl_users VALUES('" + usernametextBox.Text + "' , '" + passwordtextBox.Text + "' , '" + nametextBox1.Text+ "' , '" +gendertextBox1.Text+"' , '" +numbtextBox1.Text+"' , '" +locatetextBox1.Text+"' , '" +birthtextBox1.Text+"')";
                 cmd=new OleDbCommand(register,con);
                 cmd.ExecuteNonQuery();
                 con.Close();

@@ -34,14 +34,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.updatebutton = new System.Windows.Forms.Button();
+            this.nametextBox = new System.Windows.Forms.TextBox();
+            this.numbtextBox = new System.Windows.Forms.TextBox();
+            this.locatetextBox = new System.Windows.Forms.TextBox();
+            this.birthtextBox = new System.Windows.Forms.TextBox();
             this.hmlabel = new System.Windows.Forms.Label();
+            this.gendertextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.sutextBox = new System.Windows.Forms.TextBox();
+            this.editbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(12, 104);
+            this.label1.Location = new System.Drawing.Point(426, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 0;
@@ -71,7 +73,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(12, 263);
+            this.label3.Location = new System.Drawing.Point(426, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 2;
@@ -82,7 +84,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(12, 154);
+            this.label4.Location = new System.Drawing.Point(426, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 3;
@@ -93,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(12, 203);
+            this.label5.Location = new System.Drawing.Point(426, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 20);
             this.label5.TabIndex = 4;
@@ -104,66 +106,54 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(12, 323);
+            this.label6.Location = new System.Drawing.Point(426, 332);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Birth Year :";
             // 
-            // button1
+            // updatebutton
             // 
-            this.button1.BackColor = System.Drawing.Color.Orchid;
-            this.button1.Location = new System.Drawing.Point(111, 405);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.updatebutton.BackColor = System.Drawing.Color.Orchid;
+            this.updatebutton.Location = new System.Drawing.Point(110, 200);
+            this.updatebutton.Name = "updatebutton";
+            this.updatebutton.Size = new System.Drawing.Size(82, 32);
+            this.updatebutton.TabIndex = 6;
+            this.updatebutton.Text = "Show";
+            this.updatebutton.UseVisualStyleBackColor = false;
+            this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
-            // button2
+            // nametextBox
             // 
-            this.button2.BackColor = System.Drawing.Color.Orchid;
-            this.button2.Location = new System.Drawing.Point(259, 405);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 32);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Show";
-            this.button2.UseVisualStyleBackColor = false;
+            this.nametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nametextBox.Location = new System.Drawing.Point(573, 107);
+            this.nametextBox.Name = "nametextBox";
+            this.nametextBox.Size = new System.Drawing.Size(212, 22);
+            this.nametextBox.TabIndex = 8;
             // 
-            // textBox1
+            // numbtextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 22);
-            this.textBox1.TabIndex = 8;
+            this.numbtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numbtextBox.Location = new System.Drawing.Point(573, 212);
+            this.numbtextBox.Name = "numbtextBox";
+            this.numbtextBox.Size = new System.Drawing.Size(212, 22);
+            this.numbtextBox.TabIndex = 10;
             // 
-            // textBox2
+            // locatetextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 22);
-            this.textBox2.TabIndex = 9;
+            this.locatetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locatetextBox.Location = new System.Drawing.Point(573, 272);
+            this.locatetextBox.Name = "locatetextBox";
+            this.locatetextBox.Size = new System.Drawing.Size(212, 22);
+            this.locatetextBox.TabIndex = 11;
             // 
-            // textBox3
+            // birthtextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(159, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 22);
-            this.textBox3.TabIndex = 10;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(159, 263);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 22);
-            this.textBox4.TabIndex = 11;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(159, 323);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 22);
-            this.textBox5.TabIndex = 12;
+            this.birthtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthtextBox.Location = new System.Drawing.Point(573, 332);
+            this.birthtextBox.Name = "birthtextBox";
+            this.birthtextBox.Size = new System.Drawing.Size(212, 22);
+            this.birthtextBox.TabIndex = 12;
             // 
             // hmlabel
             // 
@@ -177,20 +167,59 @@
             this.hmlabel.Text = "Back To Homepage...";
             this.hmlabel.Click += new System.EventHandler(this.hmlabel_Click);
             // 
+            // gendertextBox
+            // 
+            this.gendertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gendertextBox.Location = new System.Drawing.Point(573, 163);
+            this.gendertextBox.Name = "gendertextBox";
+            this.gendertextBox.Size = new System.Drawing.Size(212, 22);
+            this.gendertextBox.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(15, 113);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 22);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Re-Enter Password:";
+            // 
+            // sutextBox
+            // 
+            this.sutextBox.Location = new System.Drawing.Point(19, 138);
+            this.sutextBox.Name = "sutextBox";
+            this.sutextBox.Size = new System.Drawing.Size(199, 22);
+            this.sutextBox.TabIndex = 16;
+            // 
+            // editbutton
+            // 
+            this.editbutton.BackColor = System.Drawing.Color.Orchid;
+            this.editbutton.Location = new System.Drawing.Point(690, 395);
+            this.editbutton.Name = "editbutton";
+            this.editbutton.Size = new System.Drawing.Size(95, 32);
+            this.editbutton.TabIndex = 17;
+            this.editbutton.Text = "Edit";
+            this.editbutton.UseVisualStyleBackColor = false;
+            this.editbutton.Click += new System.EventHandler(this.editbutton_Click);
+            // 
             // profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(839, 535);
+            this.Controls.Add(this.editbutton);
+            this.Controls.Add(this.sutextBox);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.gendertextBox);
             this.Controls.Add(this.hmlabel);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.birthtextBox);
+            this.Controls.Add(this.locatetextBox);
+            this.Controls.Add(this.numbtextBox);
+            this.Controls.Add(this.nametextBox);
+            this.Controls.Add(this.updatebutton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -213,13 +242,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button updatebutton;
+        private System.Windows.Forms.TextBox nametextBox;
+        private System.Windows.Forms.TextBox numbtextBox;
+        private System.Windows.Forms.TextBox locatetextBox;
+        private System.Windows.Forms.TextBox birthtextBox;
         private System.Windows.Forms.Label hmlabel;
+        private System.Windows.Forms.TextBox gendertextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox sutextBox;
+        private System.Windows.Forms.Button editbutton;
     }
 }
