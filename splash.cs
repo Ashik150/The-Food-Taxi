@@ -21,17 +21,27 @@ namespace The_Food_Taxi
         {
             startpos += 1;
             progress.Value= startpos;
-            if(startpos <=33)
+            if(startpos <=20)
             {
                 loadinglabel.Text = "Professional Application";
                 loadinglabel.ForeColor= Color.WhiteSmoke;
             }
-            else if(startpos>33 && startpos<=65)
+            else if (startpos > 20 && startpos <= 40)
             {
                 loadinglabel.Text = "Developed by Professional Team";
-                loadinglabel.ForeColor = Color.White;
+                loadinglabel.ForeColor = Color.WhiteSmoke;
             }
-            else if(startpos>65)
+            else if (startpos > 40 && startpos <= 60)
+            {
+                loadinglabel.Text = "OOP Project by C#: The Food Taxi";
+                loadinglabel.ForeColor = Color.WhiteSmoke;
+            }
+            else if(startpos>60 && startpos<=80)
+            {
+                loadinglabel.Text = "The Food Taxi:Developed in .NET";
+                loadinglabel.ForeColor = Color.WhiteSmoke;
+            }
+            else if(startpos>80)
             {
                 loadinglabel.Text = "Contact: Ashik,Esham And Ayon";
                 loadinglabel.ForeColor = Color.WhiteSmoke;
