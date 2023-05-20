@@ -261,7 +261,7 @@
             this.checkmenubutton.ForeColor = System.Drawing.Color.White;
             this.checkmenubutton.Location = new System.Drawing.Point(324, 347);
             this.checkmenubutton.Name = "checkmenubutton";
-            this.checkmenubutton.Size = new System.Drawing.Size(174, 37);
+            this.checkmenubutton.Size = new System.Drawing.Size(189, 43);
             this.checkmenubutton.TabIndex = 7;
             this.checkmenubutton.Text = "Check Out Restaurant";
             this.checkmenubutton.UseVisualStyleBackColor = false;
